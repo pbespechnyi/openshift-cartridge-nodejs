@@ -8,7 +8,7 @@ Website: http://www.nodejs.org/
 Display-Name: Node.js Auto-Updating
 Cartridge-Short-Name: NODEJS
 Cartridge-Version: '2.6.0'
-Cartridge-Vendor: GolamRagib
+Cartridge-Vendor: golamragib
 Source-Url: https://github.com/GolamRagib/openshift-cartridge-nodejs.git
 Categories:
 - service
