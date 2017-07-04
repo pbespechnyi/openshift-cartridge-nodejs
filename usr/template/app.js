@@ -3,6 +3,7 @@ const http         = require('http'),
       path         = require('path'),
       contentTypes = require('./utils/content-types'),
       sysInfo      = require('./utils/sys-info'),
+      express      = require('express'),
       env          = process.env;
 
 let server = http.createServer(function (req, res) {

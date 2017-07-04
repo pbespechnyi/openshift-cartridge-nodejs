@@ -25,12 +25,9 @@ function build() {
   update_nodejs
   local INIT_DIR=`pwd`
   cd ${OPENSHIFT_REPO_DIR}
-  if [ -d ${OPENSHIFT_DATA_DIR}node_modules ]; then
-    rm -rf ./node_modules
-    mv -f ${OPENSHIFT_DATA_DIR}node_modules ./
-    rm -rf ${OPENSHIFT_DATA_DIR}node_modules
-  fi
-  npm prune --production
+  
+  rm -rf ./node_modules
+  
   npm i --production
   cd ${INIT_DIR}
   client_result 'Node.js modules installed.'
